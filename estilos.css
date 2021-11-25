@@ -1,0 +1,226 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+body {
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", Helvetica, Arial, sans-serif;
+    font-weight: 100;
+    font-size: 16px;
+    line-height: 30px;
+    background-color: rgb(65, 65, 117);
+}
+
+main {
+    flex: 1 0 auto;
+}
+/* Parte del formulario de contacto */
+.container {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    }
+    
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea,
+    #contact button[type="submit"] {
+    font: 400 16px/19px "Roboto", Helvetica, Arial, sans-serif;
+    }
+    
+    #contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 150px 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    
+    #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    text-align: center;
+    }
+    
+    #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    }
+    
+    fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+    }
+    
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    }
+    
+    #contact input[type="text"]:hover,
+    #contact input[type="email"]:hover,
+    #contact input[type="tel"]:hover,
+    #contact input[type="url"]:hover,
+    #contact textarea:hover {
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+    }
+    
+    #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+    }
+    
+    #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #4c66af;
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+    }
+    
+    #contact button[type="submit"]:hover {
+    background: #4359a0;
+    transition: background-color 0.3s ease-in-out;
+    }
+    
+    #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    }
+    
+    #razon{
+        padding: 0.5em;
+    }
+
+    .copyright {
+    text-align: center;
+    }
+    
+    #contact input:focus,
+    #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+    }
+    
+    ::-webkit-input-placeholder {
+    color: #888;
+    }
+    
+    :-moz-placeholder {
+    color: #888;
+    }
+    
+    ::-moz-placeholder {
+    color: #888;
+    }
+    
+    :-ms-input-placeholder {
+    color: #888;
+    }
+    /* Página de el equipo */
+
+    .work{
+        text-align: center;
+    }
+
+    .work h1, .work h3{
+        padding: 1em;
+        color: white;
+    }
+
+    /* Página de "sobre nosotros" */
+
+    .container-fluid {
+        padding: 0;
+    }
+    
+    .container {
+        max-width: 800px;
+    }
+
+    .row p{
+        margin-top: 1em;
+    }
+    
+    .content-page h1, 
+    .content-page h2, 
+    .content-page h3, 
+    .content-page h4 {
+        margin: 0;
+        padding: 20px 0 10px 0;
+    }
+    
+    .content-page .row {
+        padding: 30px 0 40px 0;
+    }
+    
+    .content-page h2 {
+        color: #ffffff;
+        font-size: 30px;
+    }
+    .content-page p {
+        color: #ffffff;
+        font-size: 14px;
+        padding-bottom: 10px;
+    }
+    
+    .content-page a {
+        color: rgb(14, 236, 88);
+        font-weight: 600;
+    }
+    
+    .content-page .hero {
+        height: 250px;
+        background-image: url("https://systmapp-temp.s3.amazonaws.com/about/header-background.jpg");/*url("/images/headers/header-background.jpg");*/
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .content-page .hero h1 {
+        color: #fff;
+        font-size: 48px;
+    }
+    .content-page .hero p {
+        color: #ebf0f5;
+        font-size: 14px;
+    }
+    @media (max-width: 600px) {
+        .hero, .mission {
+            padding: 1em;
+        }
+      }

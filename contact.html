@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="estilos.css" rel="stylesheet" type="text/css" />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <title>Templates</title>
+</head>
+<body>
+    <header-component></header-component>
+    <main>
+        <div class="container">  
+            <form id="contact" action="" method="post">
+            <h3>Formulario de contacto</h3>
+            <h4>Mándenos sus dudas</h4>
+            <fieldset>
+                <input placeholder="Nombre" type="text" tabindex="1" required autofocus>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Correo electrónico" type="email" tabindex="2" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Su número de teléfono" type="tel" tabindex="3" pattern="[0-9]{9}" required>
+            </fieldset>
+            <fieldset>
+                <input placeholder="Su página web (opcional)" type="url" tabindex="4">
+            </fieldset>
+            <fieldset>
+                <textarea placeholder="Aquí su mensaje...." tabindex="5" required></textarea>
+            </fieldset>
+            <fieldset>
+                <label for="razon">Razón de su mensaje:</label>
+                    <select name="razon" id="razon">
+                        <option value="negocios">Negocios</option>
+                        <option value="dudas">Dudas</option>
+                        <option value="venganza">Venganza</option>
+                    </select>
+            </fieldset>
+            <fieldset>
+                <button name="submit" type="submit" id="contact-submit" data-submit="Enviando">Enviar</button>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" checked> Quiero recibir la newsletter.
+            </fieldset>
+            </form>
+        </div>
+    </main>
+    <footer-component></footer-component>
+</body>
+</html>
